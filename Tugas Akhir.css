@@ -783,7 +783,7 @@ footer .pesan p {
     }
 
     header.navbar .navlist ul {
-        flex-wrap: wrap;
+
         column-gap: 10px;
         margin-top: 5px;
     }

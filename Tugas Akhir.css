@@ -1,0 +1,955 @@
+/* Css Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style Web */
+body {
+    font-family: sans-serif;
+    margin: 0;
+
+    display: flex;
+    flex-direction:column;
+
+    background: url(logo/background2.png);
+    background-repeat: repeat-y;
+    
+}
+
+/* Style Header*/
+
+header.navbar {
+    height: 100px;
+    max-width: 100%;
+    width: 100%;
+    margin-inline: auto;
+    background-color:#CDE990;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    position: fixed;
+    
+
+    padding-block: 2px;
+    z-index: 9999;
+
+}
+
+header img {
+    width: 300px;
+}
+
+header.navbar .navlist ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px 20px;
+
+}
+
+header.navbar .navlist li{
+    list-style-type:none;
+
+}
+
+header.navbar .navlist li a {
+    text-decoration: none;
+    font-size:18px;
+    font-weight: 500;
+    color: black;
+    border-radius: 800px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar .navlist li a:hover {
+    color:#FF6584;
+    
+}
+
+header.navbar .navlist li a:active {
+    color:#FF6584;
+    
+}
+
+/* Style Main */
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 40px 20px;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+/* Style Profile */
+
+main .content-profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 50 0;
+    margin-top: 133px;
+    margin-bottom: 150px;
+    
+
+    
+}
+
+main .content-descrip-profile {
+    flex: 1 1;
+    padding: auto;
+}
+
+main .content-profile .content-descrip-profile .title-profile {
+    font-size: 50px;
+    font-weight: 700;
+    margin-block: 20px;
+}
+
+main .content-profile .content-descrip-profile .title-profile span {
+    color:#FF6584;
+}
+
+main .content-profile .content-descrip-profile p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+main .content-profile .content-img-profile {
+    flex: 1;
+    display: flex;
+   
+}
+
+main .content-profile .content-img-profile img {
+    margin: auto;
+    width: 350px;
+}
+
+/* Style Jurusan */
+
+main .jurusan .jurusan-title {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    background-color: #FF6584;
+    border-radius: 500px;
+    padding: 20px;
+
+    z-index: 999;
+}
+
+
+/* Style TITL */
+
+main .content-TITL {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 150px 0 150px 0;
+    z-index: 999;
+}
+
+main .content-descrip-TITL {
+    flex: 1 1;
+}
+
+main .content-TITL .content-descrip-TITL .title-TITL {
+    font-size: 50px;
+    font-weight: 700;
+    margin-block: 20px;
+}
+
+main .content-TITL .content-descrip-TITL .title-TITL span {
+    color:#FF6584;
+}
+
+main .content-TITL .content-descrip-TITL p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+main .content-TITL .content-img-TITL {
+    flex: 1;
+    display: flex;
+}
+
+main .content-TITL .content-img-TITL img {
+    margin: auto;
+    width: 350px;
+}
+
+/* Style TP */
+
+main .content-TP {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 50 0;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    z-index: 999;
+
+    
+}
+
+main .content-descrip-TP {
+    flex: 1 1;
+    
+}
+
+main .content-TP .content-descrip-TP .title-TP {
+    font-size: 50px;
+    font-weight: 700;
+    margin-block: 20px;
+}
+
+main .content-TP .content-descrip-TP .title-TP span {
+    color:#FF6584;
+}
+
+main .content-TP .content-descrip-TP p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+main .content-TP .content-img-TP {
+    flex: 1;
+    display: flex;
+    z-index: 999;
+}
+
+main .content-TP .content-img-TP img {
+    margin: auto;
+    width: 400px;
+}
+
+/* Style TKRO */
+main .content-TKRO {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 150px 0 150px 0;
+    z-index: 999;
+}
+
+main .content-descrip-TKRO {
+    flex: 1 1;
+}
+
+main .content-TKRO .content-descrip-TKRO .title-TKRO {
+    font-size: 50px;
+    font-weight: 700;
+    margin-block: 20px;
+}
+
+main .content-TKRO .content-descrip-TKRO .title-TKRO span {
+    color:#FF6584;
+}
+
+main .content-TKRO .content-descrip-TKRO p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+main .content-TKRO .content-img-TKRO {
+    flex: 1;
+    display: flex;
+}
+
+main .content-TKRO .content-img-TKRO img {
+    margin: auto;
+    width: 350px;
+}
+
+/* Style TBO */
+
+main .content-TBO {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 50 0;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    z-index: 999;
+
+    
+}
+
+main .content-descrip-TBO {
+    flex: 1 1;
+    
+}
+
+main .content-TBO .content-descrip-TBO .title-TBO {
+    font-size: 50px;
+    font-weight: 700;
+    margin-block: 20px;
+}
+
+main .content-TBO .content-descrip-TBO .title-TBO span {
+    color:#FF6584;
+}
+
+main .content-TBO .content-descrip-TBO p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+main .content-TBO .content-img-TBO {
+    flex: 1;
+    display: flex;
+    z-index: 999;
+}
+
+main .content-TBO .content-img-TBO img {
+    margin: auto;
+    width: 400px;
+}
+
+/* Style TKJ */
+main .content-TKJ {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 150px 0 182px 0;
+    z-index: 999;
+}
+
+main .content-descrip-TKJ {
+    flex: 1 1;
+}
+
+main .content-TKJ .content-descrip-TKJ .title-TKJ {
+    font-size: 50px;
+    font-weight: 700;
+    margin-block: 20px;
+}
+
+main .content-TKJ .content-descrip-TKJ .title-TKJ span {
+    color:#FF6584;
+}
+
+main .content-TKJ .content-descrip-TKJ p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+main .content-TKJ .content-img-TKJ {
+    flex: 1;
+    display: flex;
+}
+
+main .content-TKJ .content-img-TKJ img {
+    margin: auto;
+    width: 400px;
+}
+
+/* Style Alumni */
+
+main .alumni .alumni-title {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    background-color: #FF6584;
+    border-radius: 500px;
+    padding: 20px;
+
+    z-index: 999;
+}
+
+/* Style Alumni 1 */
+
+main .daftar-alumni {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main .daftar-alumni .alumni1 {
+    background-color: rgba(205, 233, 144, 0.377);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 25px;
+    border-radius: 10px;
+    width: 400px;
+    margin-right:55px;
+    border: solid 2px #FF6584;
+    
+
+}
+
+main .daftar-alumni .alumni1 .alumni-img-1 img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .daftar-alumni .alumni1 .alumni-biodata-box1 {
+    max-width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+main .daftar-alumni .alumni1 .alumni-biodata-box1 .alumni-bio-1 .bioalumni1 {
+    font-size: 16px;
+    float: left;
+    margin: auto;
+    text-align: justify;
+    overflow: auto;
+
+}
+
+main .daftar-alumni .alumni1 .alumni-biodata-box1 .alumni-bio-1 .bioalumni1 span {
+    color:black;
+    background-color: #FF6584;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 1px;
+
+}
+
+
+
+/* Style Alumni 2 */
+
+main .daftar-alumni .alumni2 {
+    background-color: rgba(205, 233, 144, 0.377);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 25px;
+    border-radius: 10px;
+    width: 400px;
+    margin-right: 55px;
+    border: solid 2px #FF6584;
+    
+
+}
+
+main .daftar-alumni .alumni2 .alumni-img-2 img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .daftar-alumni .alumni2 .alumni-biodata-box2 {
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+main .daftar-alumni .alumni2 .alumni-biodata-box2 .alumni-bio-2 .bioalumni2 {
+    font-size: 16px;
+    float: left;
+    margin: auto;
+    text-align: justify;
+
+}
+
+main .daftar-alumni .alumni2 .alumni-biodata-box2 .alumni-bio-2 .bioalumni2 span {
+    color:black;
+    background-color: #FF6584;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 1px;
+
+}
+
+
+
+/* Style Alumni 3 */
+
+main .daftar-alumni .alumni3 {
+    background-color: rgba(205, 233, 144, 0.377);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 25px;
+    border-radius: 10px;
+    width: 400px;
+    margin-right: 55px;
+    border: solid 2px #FF6584;
+    
+
+}
+
+main .daftar-alumni .alumni3 .alumni-img-3 img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .daftar-alumni .alumni3 .alumni-biodata-box3 {
+    max-width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+main .daftar-alumni .alumni3 .alumni-biodata-box3 .alumni-bio-3 .indexbio-3 {
+    font-size: 16px;
+    float: left;
+    margin: auto;
+
+    
+}
+
+main .daftar-alumni .alumni3 .alumni-biodata-box3 .alumni-bio-3 .bioalumni3 {
+    font-size: 16px;
+    float: left;
+    margin: auto;
+    text-align: justify;
+
+}
+
+main .daftar-alumni .alumni3 .alumni-biodata-box3 .alumni-bio-3 .bioalumni3 span {
+    color:black;
+    background-color: #FF6584;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 1px;
+
+}
+
+/* Style Pendaftaran */
+
+main .pendaftaran .pendaftaran-title {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    background-color: #FF6584;
+    border-radius: 500px;
+    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+
+    z-index: 999;
+}
+
+main .main-form-pendaf {
+    width: 600px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 20px;
+    display: flex;
+    
+
+}
+
+main .main-form-pendaf .form-label {
+    font-size:25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    float:left;
+    width: 250px;
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom:20px;
+}
+
+main .main-form-pendaf .form-textbox {
+    float:left;
+    width:215px;
+    height: 20px;
+    margin-bottom:20px;
+    border-radius: 10px;
+    
+}
+
+main .main-form-pendaf .form-label-jk {
+    color:white;
+    font-weight: bold;
+    width:50px;
+    margin-bottom:10px;
+    
+}
+
+main .main-form-pendaf .form-textbox-jurusan {
+    float:left;
+    width:225px;
+    height: 30px;
+    margin-bottom:20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+main .main-form-pendaf .button-daftar {
+    font-size:24px;
+    width:200px;
+    height:50px;
+    margin:20px 200px 10px;
+    padding:auto;
+    border-radius:20px;
+}
+
+.clear {
+    clear: both;
+}
+
+main .kontak .kontak-title {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    background-color: #FF6584;
+    border-radius: 500px;
+    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+
+    z-index: 999;
+}
+
+/* Style aside kontak */
+
+
+main .content-datadiri {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 150px 0 150px 0;
+    z-index: 999;
+}
+
+main .content-descrip-datadiri {
+    flex: 1 1;
+}
+
+main .content-datadiri .content-descrip-datadiri .title-datadiri {
+    font-size: 50px;
+    font-weight: 700;
+    margin-block: 20px;
+}
+
+main .content-datadiri .content-descrip-datadiri .title-datadiri span {
+    color:#FF6584;
+}
+
+main .content-datadiri .content-descrip-datadiri p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+main .content-datadiri .content-descrip-datadiri p span {
+    color:#FF6584;
+    font-weight: bold;
+}
+
+main .content-datadiri .content-img-datadiri {
+    flex: 1;
+    display: flex;
+}
+
+main .content-datadiri .content-img-datadiri img {
+    margin: auto;
+    width: 350px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 1200px;
+    width: 100%;
+    flex:1;
+    padding: 50px;
+    justify-content:space-around ;
+
+}
+
+footer .pesan h1 {
+    font-size: 50px;
+    flex:1;
+    display: flex;
+    align-items:center;
+}
+
+footer .pesan h1 span {
+    color:#FF6584;
+}
+
+footer .pesan p {
+    font-size: 30px;
+    flex:1;
+    display: flex;
+    align-items:center;
+    text-align: center;
+}
+
+
+/* Medium Device */
+
+@media screen and (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+        height: 120px;
+    }
+
+    header.navbar .navlist ul {
+        flex-wrap: wrap;
+        column-gap: 20px;
+        margin-top: 5px;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    /* Profile */
+    main .content-descrip-profile {
+        flex: 1 1;
+        
+    }
+
+    main .content-profile {
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+
+    main .content-profile .content-descrip-profile {
+        font-size:1rem;
+        
+    }
+
+    main .content-profile .content-img-profile {
+        order: -1;
+    }
+
+    main .jurusan .jurusan-title {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    /* TITL */
+    main .content-TITL {
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+
+    main .content-TITL .content-descrip-TITL {
+        font-size:1rem;
+        
+    }
+
+    main .content-TITL .content-img-TITL {
+        order: -1;
+    }
+    
+    /* TP */
+    main .content-TP {
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+
+    main .content-TP .content-descrip-TP {
+        font-size:1rem;
+        
+    }
+
+    main .content-TP .content-img-TP {
+        order: -1;
+    }
+
+    /* TKRO */
+    main .content-TKRO {
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+
+    main .content-TKRO .content-descrip-TKRO {
+        font-size:1rem;
+        
+    }
+
+    main .content-TKRO .content-img-TKRO {
+        order: -1;
+    }
+
+    /* TBO */
+    main .content-TBO {
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+
+    main .content-TBO .content-descrip-TBO {
+        font-size:1rem;
+        
+    }
+
+    main .content-TBO .content-img-TBO {
+        order: -1;
+    }
+
+    /* TKJ */
+    main .content-TKJ {
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+
+    main .content-TKJ .content-descrip-TKJ {
+        font-size:1rem;
+        
+    }
+
+    main .content-TKJ .content-img-TKJ {
+        order: -1;
+    }
+
+    /* alumni */
+    main .daftar-alumni {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .pendaftaran .pendaftaran-title {
+        flex-direction: column;
+        gap: 2rem;
+        width: 80%;
+    }
+    
+    /* Pendaftaran */
+    main .main-form-pendaf {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    /* Data Diri */
+
+    main .kontak .kontak-title {
+        flex-direction: column;
+        gap: 2rem;
+        width: 80%;
+        margin-right: 200px;
+
+    }
+    
+    
+    main .content-datadiri {
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+
+    footer .pesan h1 {
+        font-size: 30px;
+        flex-direction: column;
+        display: flex;
+        align-items:center;
+        
+    }
+
+    footer .pesan p {
+    font-size: 15px;
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+    text-align: center;
+
+}
+
+    footer .pesan {
+        margin-right: 100px;
+        flex-direction: column;
+
+}
+
+}
+
+
